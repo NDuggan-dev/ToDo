@@ -42,7 +42,7 @@ body {
     border: none;
 }
 .btn:hover {
-    transform: scale(0.98);
+    transform: scale(0.96);
 }
 .btn-primary {
     background-color: var(--primary-color);
@@ -80,7 +80,7 @@ body {
     background-color: transparent;
 }
 .sidebar-form input:focus {
-    outline: none;
+    outline: var(--primary-color);
 }
 .sidebar-form button {
     width: 100%;
@@ -93,7 +93,7 @@ body {
     display: inline-flex;
     align-items: center;
     width: 100%;
-    margin: 16px 0;
+    margin: 4px 0;
     cursor: pointer;
     font-size: 1.75rem;
 }
