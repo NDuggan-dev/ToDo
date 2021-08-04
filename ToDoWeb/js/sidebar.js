@@ -12,6 +12,7 @@ let filterDiv = document.querySelector("#filter");
 let categoriesBtnIcon = document.querySelector("#categories-icon");
 let addTaskBtnIcon = document.querySelector("#task-icon");
 let listCategoriesDiv = document.querySelector("#list-categories");
+let addTaskFormDiv = document.querySelector("#add-task-form");
 
 closeBtnDiv.addEventListener("click", ()=>{
   if(closeBtn.classList.contains("bx-menu") || 
@@ -41,7 +42,7 @@ categoriesDiv.addEventListener("click", ()=>{ // Sidebar open when you click on 
     if(!sidebar.classList.contains("open")){
         sidebar.classList.toggle("open"); 
       }
-      // listAddListDiv.classList.toggle("display-none");
+      addTaskFormDiv.classList.toggle("display-none");
       toggleAllButtonsExcept(addTaskDiv)
       menuIconArrowChange(addTaskBtnIcon, "bx-list-plus"); 
     });

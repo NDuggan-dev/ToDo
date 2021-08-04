@@ -9,6 +9,15 @@
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
+.card {
+  margin: 0.5rem;
+}
+.card-icon:hover {
+  flex: right;
+  color:#FFF;
+  transform: scale(1.5);
+}
+
 .sidebar{
   position: fixed;
   left: 0;
@@ -20,6 +29,15 @@
   z-index: 99;
   transition: all 0.5s ease;
 }
+.scroll-area {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-color: #6699CC;
+  border-width: 1px;
+  border-style: solid;
+  float: left;
+  overflow: auto;
+ }
 .sidebar.open{
   width: 350px;
 }
@@ -94,6 +112,8 @@
 
   background: linear-gradient(110deg, #11101D 80%, #ffed4b 20%);
 }
+
+
 #category-1 a .links_name {
   align-items: flex-start;
   float:left;
@@ -200,6 +220,26 @@
   pointer-events: none;
   transition: 0.4s;
 }
+span .links_name{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+.label_name {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+
 .sidebar.open li a .links_name{
   opacity: 1;
   pointer-events: auto;
