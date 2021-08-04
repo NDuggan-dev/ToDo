@@ -9,6 +9,15 @@
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
+.card {
+  margin: 0.5rem;
+}
+.card-icon:hover {
+  flex: right;
+  color:#FFF;
+  transform: scale(1.5);
+}
+
 .sidebar{
   position: fixed;
   left: 0;
